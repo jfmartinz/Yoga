@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.left {
+    background-image: url(background.jpg);
+    width: 50vw;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* sytling for right side of the website */
+.right {
+display: flex;
+justify-content: center;
+width: 50vw;
+min-height: 100vh;
+}
+
+.right h1 {
+    font-size: 2.7rem;
+    margin-bottom: 0.75em;
+    margin-top: 2.5em;
+}
+
+.right p {
+    line-height: 2;
+    margin-bottom: 1.5em;
+}
+
+.right-content {
+    width: 70%;
+}
+.right-content a {
+    text-decoration: none;
+    color: black;
+}
+.right-content span {
+    border-bottom: 2px solid #000;
+}
+
+
+
+.btn-container{
+    width: 180px;
+    margin: 2em 0;
+}
+.btn-container button{
+    width: 100%;
+    height: 50px;
+    border-radius:29px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #d9820d;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.btn-container button:hover{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+@media (max-width: 1200px) {
+    .container{
+        flex-direction: column;
+        
+    }
+
+    .right, .left{
+        width: 100%;
+        min-height: 80vh;
+    }
+}
